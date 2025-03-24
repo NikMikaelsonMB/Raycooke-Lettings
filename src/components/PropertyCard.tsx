@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Property } from "@/types/property";
-import { Bed, Bath, Square, CalendarDays, ArrowUpRight } from "lucide-react";
+import { Bed, Bath, Square, CalendarDays, ArrowUpRight, MapPin } from "lucide-react";
 import { formatDistanceToNow } from "date-fns";
 
 interface PropertyCardProps {
