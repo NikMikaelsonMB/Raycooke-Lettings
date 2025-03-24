@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ImageSearch from "@/components/ImageSearch";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { X } from "lucide-react";
 
 const ImagesPage = () => {
   const [selectedImages, setSelectedImages] = useState<string[]>([]);

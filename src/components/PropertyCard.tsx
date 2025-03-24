@@ -1,7 +1,7 @@
 
-import React from "react";
+import React, { useState } from "react";
 import { Property } from "@/types/property";
-import { Bed, Bath, Square, CalendarDays, ArrowUpRight, MapPin } from "lucide-react";
+import { Bed, Bath, Square, CalendarDays, ArrowUpRight, MapPin, ChevronLeft, ChevronRight } from "lucide-react";
 import { formatDistanceToNow } from "date-fns";
 
 interface PropertyCardProps {
@@ -9,6 +9,8 @@ interface PropertyCardProps {
 }
 
 const PropertyCard = ({ property }: PropertyCardProps) => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
   const formatPrice = (price: number) => {
     return new Intl.NumberFormat("en-IE", {
       style: "currency",
@@ -34,15 +36,60 @@ const PropertyCard = ({ property }: PropertyCardProps) => {
     return "bg-gray-500"; // Exempt
   };
 
+  const nextImage = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (property.images.length > 1) {
+      setCurrentImageIndex((prevIndex) => 
+        prevIndex === property.images.length - 1 ? 0 : prevIndex + 1
+      );
+    }
+  };
+
+  const prevImage = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (property.images.length > 1) {
+      setCurrentImageIndex((prevIndex) => 
+        prevIndex === 0 ? property.images.length - 1 : prevIndex - 1
+      );
+    }
+  };
+
+  const currentImage = property.images[currentImageIndex] || "https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&q=80";
+
   return (
     <div className="property-card group">
       {/* Image container */}
       <div className="relative h-48 md:h-60 overflow-hidden">
         <img
-          src={property.images[0] || "https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&q=80"}
+          src={currentImage}
           alt={property.title}
-          className="property-image"
+          className="property-image transition-transform duration-300 hover:scale-105"
         />
+
+        {/* Image navigation arrows */}
+        {property.images.length > 1 && (
+          <>
+            <button 
+              onClick={prevImage}
+              className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white rounded-full p-1 transition-all duration-200 opacity-0 group-hover:opacity-100"
+              aria-label="Previous image"
+            >
+              <ChevronLeft size={20} />
+            </button>
+            <button 
+              onClick={nextImage}
+              className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white rounded-full p-1 transition-all duration-200 opacity-0 group-hover:opacity-100"
+              aria-label="Next image"
+            >
+              <ChevronRight size={20} />
+            </button>
+            
+            {/* Image counter */}
+            <div className="absolute bottom-3 right-3 bg-black/60 text-white text-xs px-2 py-1 rounded-full">
+              {currentImageIndex + 1}/{property.images.length}
+            </div>
+          </>
+        )}
 
         {/* Badges */}
         <div className="absolute top-3 left-3 flex flex-wrap gap-2">
