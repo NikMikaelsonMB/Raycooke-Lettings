@@ -1,10 +1,11 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 210 40% 98.5%;
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -13,7 +14,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 221 83% 32%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -22,7 +23,7 @@
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
+    --accent: 215 98% 95%;
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
@@ -30,24 +31,17 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 221 83% 32%;
 
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -95,7 +89,70 @@
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02";
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-medium tracking-tight;
+  }
+  
+  h1 {
+    @apply text-4xl sm:text-5xl lg:text-6xl;
+  }
+  
+  h2 {
+    @apply text-3xl sm:text-4xl;
+  }
+  
+  h3 {
+    @apply text-2xl sm:text-3xl;
+  }
+  
+  img {
+    @apply object-cover;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-sm;
+  }
+  
+  .property-card {
+    @apply relative overflow-hidden bg-white rounded-lg shadow-card transition-all duration-300 ease-bezier hover:shadow-card-hover;
+  }
+  
+  .property-card:hover .property-image {
+    @apply scale-105;
+  }
+  
+  .property-image {
+    @apply w-full h-full object-cover transition-transform duration-500 ease-bezier;
+  }
+  
+  .property-badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+  
+  .search-input {
+    @apply w-full p-3 pl-10 bg-white rounded-lg border border-gray-200 focus:border-estate-primary focus:ring-1 focus:ring-estate-primary transition-all duration-200;
+  }
+  
+  .btn-primary {
+    @apply bg-estate-primary text-white hover:bg-estate-primary-light focus:ring-2 focus:ring-estate-primary/20 transition-all duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-estate-light text-estate-dark hover:bg-estate-accent focus:ring-2 focus:ring-estate-primary/10 transition-all duration-200;
+  }
+  
+  .btn-outline {
+    @apply border border-estate-primary text-estate-primary hover:bg-estate-primary hover:text-white focus:ring-2 focus:ring-estate-primary/20 transition-all duration-200;
   }
 }

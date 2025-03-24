@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,19 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Custom real estate color palette
+				estate: {
+					'primary': '#0E4C94',
+					'primary-light': '#1E6BC6',
+					'secondary': '#F8F9FA',
+					'accent': '#E0E8F3',
+					'dark': '#191C1E',
+					'medium': '#6A7280',
+					'light': '#F1F4F8',
+					'success': '#38BFA0',
+					'warning': '#F8C145',
+					'error': '#E05858',
 				}
 			},
 			borderRadius: {
@@ -70,25 +84,61 @@ export default {
 			},
 			keyframes: {
 				'accordion-down': {
-					from: {
-						height: '0'
-					},
-					to: {
-						height: 'var(--radix-accordion-content-height)'
-					}
+					from: { height: '0' },
+					to: { height: 'var(--radix-accordion-content-height)' }
 				},
 				'accordion-up': {
-					from: {
-						height: 'var(--radix-accordion-content-height)'
+					from: { height: 'var(--radix-accordion-content-height)' },
+					to: { height: '0' }
+				},
+				'fade-in': {
+					from: { opacity: '0' },
+					to: { opacity: '1' }
+				},
+				'fade-in-up': {
+					from: { 
+						opacity: '0',
+						transform: 'translateY(20px)'
 					},
-					to: {
-						height: '0'
+					to: { 
+						opacity: '1',
+						transform: 'translateY(0)'
 					}
+				},
+				'slide-in-right': {
+					from: { 
+						opacity: '0',
+						transform: 'translateX(20px)'
+					},
+					to: { 
+						opacity: '1',
+						transform: 'translateX(0)'
+					}
+				},
+				'pulse-subtle': {
+					'0%, 100%': {
+						opacity: '1',
+					},
+					'50%': {
+						opacity: '0.85',
+					},
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.5s ease-out',
+				'fade-in-up': 'fade-in-up 0.5s ease-out',
+				'slide-in-right': 'slide-in-right 0.5s ease-out',
+				'pulse-subtle': 'pulse-subtle 3s ease-in-out infinite'
+			},
+			transitionTimingFunction: {
+				'bezier': 'cubic-bezier(0.16, 1, 0.3, 1)',
+			},
+			boxShadow: {
+				'card': '0 4px 20px rgba(0, 0, 0, 0.05)',
+				'card-hover': '0 10px 30px rgba(0, 0, 0, 0.08)',
+				'nav': '0 2px 10px rgba(0, 0, 0, 0.03)',
 			}
 		}
 	},
