@@ -105,11 +105,6 @@ const Footer = () => {
                 <span className="text-gray-300">Closed</span>
               </li>
             </ul>
-            <div className="mt-6">
-              <button className="bg-estate-primary hover:bg-estate-primary-light text-white py-2 px-4 rounded transition-colors">
-                Book a Viewing
-              </button>
-            </div>
           </div>
         </div>
 

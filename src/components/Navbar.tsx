@@ -77,9 +77,6 @@ const Navbar = () => {
           >
             Contact
           </a>
-          <button className="bg-estate-primary text-white px-4 py-2 rounded hover:bg-estate-primary-light transition-colors">
-            Book Viewing
-          </button>
         </nav>
 
         {/* Mobile menu button */}
@@ -124,9 +121,6 @@ const Navbar = () => {
             >
               Contact
             </a>
-            <button className="bg-estate-primary text-white w-full py-2 rounded hover:bg-estate-primary-light transition-colors">
-              Book Viewing
-            </button>
 
             {/* Contact info for mobile */}
             <div className="pt-4 border-t border-gray-100 flex flex-col space-y-3 text-sm">
