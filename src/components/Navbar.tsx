@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Menu, X, Phone, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -29,15 +30,15 @@ const Navbar = () => {
     >
       <div className="container px-4 mx-auto flex items-center justify-between">
         {/* Logo */}
-        <a 
-          href="/" 
+        <Link 
+          to="/" 
           className="flex items-center"
         >
           <div className="font-semibold text-2xl text-estate-primary tracking-tight">
             <span className="mr-1">Raycooke</span>
             <span className="font-light">Lettings</span>
           </div>
-        </a>
+        </Link>
 
         {/* Contact info (desktop only) */}
         <div className="hidden md:flex items-center space-x-4 text-sm">
@@ -53,24 +54,24 @@ const Navbar = () => {
 
         {/* Desktop navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          <a 
-            href="/" 
+          <Link 
+            to="/" 
             className="text-estate-dark hover:text-estate-primary transition-colors"
           >
             Home
-          </a>
+          </Link>
           <a 
             href="#properties" 
             className="text-estate-dark hover:text-estate-primary transition-colors"
           >
             Properties
           </a>
-          <a 
-            href="#" 
+          <Link 
+            to="/images" 
             className="text-estate-dark hover:text-estate-primary transition-colors"
           >
-            About
-          </a>
+            Images
+          </Link>
           <a 
             href="#" 
             className="text-estate-dark hover:text-estate-primary transition-colors"
@@ -93,13 +94,13 @@ const Navbar = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white absolute top-full left-0 w-full shadow-lg animate-fade-in-up">
           <div className="container mx-auto py-5 px-4 flex flex-col space-y-4">
-            <a 
-              href="/" 
+            <Link 
+              to="/" 
               className="text-estate-dark hover:text-estate-primary py-2 transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Home
-            </a>
+            </Link>
             <a 
               href="#properties" 
               className="text-estate-dark hover:text-estate-primary py-2 transition-colors"
@@ -107,13 +108,13 @@ const Navbar = () => {
             >
               Properties
             </a>
-            <a 
-              href="#" 
+            <Link 
+              to="/images" 
               className="text-estate-dark hover:text-estate-primary py-2 transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              About
-            </a>
+              Images
+            </Link>
             <a 
               href="#" 
               className="text-estate-dark hover:text-estate-primary py-2 transition-colors"
