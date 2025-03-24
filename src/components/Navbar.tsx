@@ -54,12 +54,14 @@ const Navbar = () => {
 
         {/* Desktop navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          <Link 
-            to="/" 
+          <a 
+            href="https://spectacular-platypus-2a5358.netlify.app" 
             className="text-estate-dark hover:text-estate-primary transition-colors"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Home
-          </Link>
+          </a>
           <a 
             href="#properties" 
             className="text-estate-dark hover:text-estate-primary transition-colors"
@@ -94,13 +96,15 @@ const Navbar = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white absolute top-full left-0 w-full shadow-lg animate-fade-in-up">
           <div className="container mx-auto py-5 px-4 flex flex-col space-y-4">
-            <Link 
-              to="/" 
+            <a 
+              href="https://spectacular-platypus-2a5358.netlify.app" 
               className="text-estate-dark hover:text-estate-primary py-2 transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Home
-            </Link>
+            </a>
             <a 
               href="#properties" 
               className="text-estate-dark hover:text-estate-primary py-2 transition-colors"
