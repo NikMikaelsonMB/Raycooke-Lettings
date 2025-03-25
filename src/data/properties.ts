@@ -127,6 +127,35 @@ const generateProperties = (): Property[] => {
     description: "Beautiful 2 bedroom apartment located in Kavanagh Hall, Collegewood, Castleknock, Dublin 15. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
 
+  // Override the second property with Kilworth Road details and uploaded images
+const currentDate = new Date();
+properties[1] = {
+  ...properties[0],
+  title: "3 Bedroom Apartment in Kilworth Road",
+  address: {
+    street: "Kilworth Road",
+    area: "Drimnagh",
+    county: "Dublin 12",
+    eircode: "D15 XP79"
+  },
+  price: 2285,
+  bedrooms: 3,
+  bathrooms: 2,
+  type: 'apartment',
+  images: [
+    "/pics/2h1.png",
+    "/pics/2h2.png",
+    "/pics/2h3.png",
+    "/pics/2h4.png",
+    "/pics/2h5.png",
+    "/pics/2h6.png",
+    "/pics/2h7.png",
+    "/pics/2h8.png",
+  ],
+  availableFrom: currentDate.toISOString(), // Set to today's date to make it available now
+  description: "Beautiful 3 bedroom apartment located in Kilworth Road, Drimnagh,  Dublin 12. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
+};
+
   // Override the 27th property with specific details and uploaded images (keep this as is)
   properties[26] = {
     ...properties[26],
