@@ -1,4 +1,3 @@
-
 import { Property, PropertyType } from "@/types/property";
 import { generateProperty } from "@/utils/propertyGenerator";
 import { dublinAreas, otherAreas } from "@/data/propertyLocations";
@@ -97,8 +96,38 @@ const generateProperties = (): Property[] => {
     properties.push(property);
   }
 
-  // Override the 27th property with specific details and uploaded images
+  // Override the first property with Kavanagh Hall details and uploaded images
   const currentDate = new Date();
+  properties[0] = {
+    ...properties[0],
+    title: "2 Bedroom Apartment in Kavanagh Hall",
+    address: {
+      street: "Kavanagh Hall",
+      area: "Collegewood",
+      county: "Dublin",
+      eircode: "D15 XP79"
+    },
+    price: 2023,
+    bedrooms: 2,
+    bathrooms: 2,
+    type: 'apartment',
+    images: [
+      "/lovable-uploads/76871a04-8f88-478f-8ac3-7c5dd46c1888.png",
+      "/lovable-uploads/35d3494f-ef25-408b-9418-118daf1da1c9.png",
+      "/lovable-uploads/19c55451-ef8d-4b20-9b85-dcf29d638e6c.png",
+      "/lovable-uploads/374052d5-edaa-4d91-b6cc-4ae42b2418d8.png",
+      "/lovable-uploads/f4b0ecc4-6ed8-4643-8d6f-ab4abb964c20.png",
+      "/lovable-uploads/35533001-6304-4bce-8bb0-d4c25c95e86a.png",
+      "/lovable-uploads/fec65e5e-f685-471e-b30e-91ed97c4ffbe.png",
+      "/lovable-uploads/dfe62c87-8e8b-474a-bcf5-300a27ed6667.png",
+      "/lovable-uploads/53efe8de-fd5f-429f-9044-5b6af9795ffc.png",
+      "/lovable-uploads/1b6d7d13-dbd7-4d1a-a835-a1f2ad6fd87d.png"
+    ],
+    availableFrom: currentDate.toISOString(), // Set to today's date to make it available now
+    description: "Beautiful 2 bedroom apartment located in Kavanagh Hall, Collegewood, Castleknock, Dublin 15. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
+  };
+
+  // Override the 27th property with specific details and uploaded images (keep this as is)
   properties[26] = {
     ...properties[26],
     title: "3 Bedroom House in Lindisfarne Green",
