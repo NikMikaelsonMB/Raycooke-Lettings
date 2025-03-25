@@ -57,8 +57,6 @@ const Navbar = () => {
           <a 
             href="https://spectacular-platypus-2a5358.netlify.app" 
             className="text-estate-dark hover:text-estate-primary transition-colors"
-            target="_blank"
-            rel="noopener noreferrer"
           >
             Home
           </a>
@@ -99,8 +97,6 @@ const Navbar = () => {
             <a 
               href="https://spectacular-platypus-2a5358.netlify.app" 
               className="text-estate-dark hover:text-estate-primary py-2 transition-colors"
-              target="_blank"
-              rel="noopener noreferrer"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Home
