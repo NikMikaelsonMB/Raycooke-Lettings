@@ -1,5 +1,5 @@
 
-import { Property, PropertyType } from "@/types/property";
+import { Property, PropertyType, BERRating } from "@/types/property";
 import { getRandomFutureDate, getRandomPastDate } from "@/utils/dateUtils";
 import { 
   getRandomImageIndex, 
@@ -40,7 +40,7 @@ export const generateProperty = (
     availableFrom: getRandomFutureDate(),
     status: 'available',
     images: Array(Math.floor(Math.random() * 3) + 3).fill(0).map(() => `/property-${getRandomImageIndex()}.jpg`),
-    bER: getRandomBERRating(),
+    bER: getRandomBERRating() as BERRating, // Ensure this is cast to BERRating type
     isFeatured,
     isNew,
     virtualTour: Math.random() > 0.7 ? 'https://my.matterport.com/show/?m=soLR3BK6STT' : undefined,

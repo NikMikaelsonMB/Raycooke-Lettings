@@ -97,7 +97,8 @@ const generateProperties = (): Property[] => {
     properties.push(property);
   }
 
-  // Override the 27th property with specific details
+  // Override the 27th property with specific details and uploaded images
+  const currentDate = new Date();
   properties[26] = {
     ...properties[26],
     title: "3 Bedroom House in Lindisfarne Green",
@@ -110,6 +111,18 @@ const generateProperties = (): Property[] => {
     price: 2062,
     bedrooms: 3,
     bathrooms: 2,
+    images: [
+      "/lovable-uploads/ec691cde-8649-4615-ad19-d1d2b7aeb70d.png",
+      "/lovable-uploads/49be0573-126b-48ab-99bf-8f0b9bb456dc.png",
+      "/lovable-uploads/9da60255-cd39-400c-81a9-395a2980f29f.png",
+      "/lovable-uploads/2c020fb7-da9a-4f72-9ec6-41d24addde9b.png",
+      "/lovable-uploads/dcb4c550-3a0d-482c-960e-16ad3108af0b.png",
+      "/lovable-uploads/3fad96f6-aabf-4670-be15-b7dc07f436ed.png",
+      "/lovable-uploads/79b5d8d0-9e9d-4181-be9c-bd87eee1534d.png",
+      "/lovable-uploads/9a39ba61-85e5-42cf-b690-3cef6487fdd0.png",
+      "/lovable-uploads/3daf9873-08e3-4eb1-920c-d71cdd4863d7.png"
+    ],
+    availableFrom: currentDate.toISOString(), // Set to today's date to make it available now
     description: "Beautiful 3 bedroom house located in Lindisfarne Green, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a well-maintained garden. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
 
