@@ -1,4 +1,3 @@
-
 import { Property, PropertyType } from "@/types/property";
 
 // Function to generate a property with sensible defaults
@@ -222,22 +221,38 @@ const generateProperties = (): Property[] => {
     }
     
     // Create the property
-    properties.push(
-      generateProperty(
-        i,
-        title,
-        propertyType,
-        area,
-        county,
-        price,
-        bedrooms,
-        bathrooms,
-        size,
-        isFeatured,
-        isNew
-      )
+    const property = generateProperty(
+      i,
+      title,
+      propertyType,
+      area,
+      county,
+      price,
+      bedrooms,
+      bathrooms,
+      size,
+      isFeatured,
+      isNew
     );
+    
+    properties.push(property);
   }
+
+  // Override the 27th property with specific details
+  properties[26] = {
+    ...properties[26],
+    title: "3 Bedroom House in Lindisfarne Green",
+    address: {
+      street: "Lindisfarne Green",
+      area: "Clondalkin",
+      county: "Dublin",
+      eircode: "D22 XY12"
+    },
+    price: 2062,
+    bedrooms: 3,
+    bathrooms: 2,
+    description: "Beautiful 3 bedroom house located in Lindisfarne Green, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a well-maintained garden. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
+  };
 
   return properties;
 };
