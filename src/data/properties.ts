@@ -495,7 +495,6 @@ properties[4] = {
   };
          
   // Override the fourteenth property with Grange view Road details and uploaded images
-  const exactDate = new Date(2025, 5, 2);
   properties[13] = {
     ...properties[13],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -706,7 +705,6 @@ properties[4] = {
   };
              
   // Override the twenty-first property with Grange view Road details and uploaded images
-  const exactDate = new Date(2025, 1, 25);
   properties[20] = {
     ...properties[20],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -732,12 +730,11 @@ properties[4] = {
         "/pics/21h9.png",
         "/pics/21h10.png",
     ],
-    availableFrom: exactDate.toDateString(),
+    availableFrom: new Date(2025, 1, 25).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                
   // Override the twenty-second property with Grange view Road details and uploaded images
-  const exactDate = new Date(2025, 2, 18);
   properties[21] = {
     ...properties[21],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -763,12 +760,11 @@ properties[4] = {
         "/pics/22h9.png",
         "/pics/22h10.png",
     ],
-    availableFrom: exactDate.toDateString(),
+    availableFrom: new Date(2025, 2, 18).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                
   // Override the twenty-third property with Grange view Road details and uploaded images
-  const exactDate = new Date(2024, 12, 23);
   properties[22] = {
     ...properties[22],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -794,12 +790,11 @@ properties[4] = {
         "/pics/23h9.png",
         "/pics/23h10.png",
     ],
-    availableFrom: exactDate.toDateString(),
+    availableFrom: new Date(2024, 12, 23).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                
   // Override the twenty-fourth property with Grange view Road details and uploaded images
-  const exactDate = new Date(2024, 12, 18);
   properties[23] = {
     ...properties[23],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -825,12 +820,11 @@ properties[4] = {
         "/pics/24h9.png",
         "/pics/24h10.png",
     ],
-    availableFrom: exactDate.toDateString(),
+    availableFrom: new Date(2024, 12, 18).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                
   // Override the twenty-fifth property with Grange view Road details and uploaded images
-  const exactDate = new Date(2025, 3, 9);
   properties[24] = {
     ...properties[24],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -856,12 +850,11 @@ properties[4] = {
         "/pics/25h9.png",
         "/pics/25h10.png",
     ],
-    availableFrom: exactDate.toDateString(),
+    availableFrom: new Date(2025, 3, 9).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                
   // Override the twenty-sixth property with Grange view Road details and uploaded images
-  const exactDate = new Date(2025, 4, 2);
   properties[25] = {
     ...properties[25],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -887,7 +880,7 @@ properties[4] = {
         "/pics/26h9.png",
         "/pics/26h10.png",
     ],
-    availableFrom: exactDate.toDateString(),
+    availableFrom: new Date(2025, 4, 2).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
  
@@ -950,7 +943,6 @@ properties[4] = {
   };
                 
   // Override the 29th property with Grange view Road details and uploaded images
-  const exactDate = new Date();
   properties[28] = {
     ...properties[28],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -976,12 +968,11 @@ properties[4] = {
         "/pics/29h9.png",
         "/pics/29h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2025, 2, 23).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                 
   // Override the 30th property with Grange view Road details and uploaded images
-  const exactDate = new Date();
   properties[29] = {
     ...properties[29],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1007,12 +998,11 @@ properties[4] = {
         "/pics/30h9.png",
         "/pics/30h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2025, 2, 15).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                 
   // Override the 31st property with Grange view Road details and uploaded images
-  const exactDate = new Date();
   properties[30] = {
     ...properties[30],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1038,12 +1028,11 @@ properties[4] = {
         "/pics/31h9.png",
         "/pics/31h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2025, 3, 25).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                 
   // Override the 32nd property with Grange view Road details and uploaded images
-  const exactDate = new Date();
   properties[31] = {
     ...properties[31],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1069,12 +1058,11 @@ properties[4] = {
         "/pics/32h9.png",
         "/pics/32h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2025, 2, 19).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                 
   // Override the 33rd property with Grange view Road details and uploaded images
-  const exactDate = new Date();
   properties[32] = {
     ...properties[32],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1100,12 +1088,11 @@ properties[4] = {
         "/pics/33h9.png",
         "/pics/33h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2025, 1, 29).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                 
   // Override the 34th property with Grange view Road details and uploaded images
-  const exactDate = new Date();
   properties[33] = {
     ...properties[33],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1131,12 +1118,11 @@ properties[4] = {
         "/pics/34h9.png",
         "/pics/34h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2024, 12, 30).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                  
   // Override the 35th property with Grange view Road details and uploaded images
-  const exactDate = new Date();
   properties[34] = {
     ...properties[34],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1162,12 +1148,11 @@ properties[4] = {
         "/pics/35h9.png",
         "/pics/35h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2025, 3, 9).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                 
   // Override the 36th property with Grange view Road details and uploaded images
-  const exactDate = new Date();
   properties[35] = {
     ...properties[35],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1193,12 +1178,11 @@ properties[4] = {
         "/pics/36h9.png",
         "/pics/36h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2025, 3, 21).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                   
   // Override the 37th property with Grange view Road details and uploaded images
-  const exactDate = new Date();
   properties[36] = {
     ...properties[36],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1224,12 +1208,11 @@ properties[4] = {
         "/pics/37h9.png",
         "/pics/37h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2025, 4, 1).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                  
   // Override the 38th property with Grange view Road details and uploaded images
-  const exactDate = new Date();
   properties[37] = {
     ...properties[37],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1255,12 +1238,11 @@ properties[4] = {
         "/pics/38h9.png",
         "/pics/38h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2025, 3, 21).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                  
   // Override the 39th property with Grange view Road details and uploaded images
-  const exactDate = new Date();
   properties[38] = {
     ...properties[38],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1286,12 +1268,11 @@ properties[4] = {
         "/pics/39h9.png",
         "/pics/39h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2025, 3, 12).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                  
   // Override the 40th property with Grange view Road details and uploaded images
-  const exactDate = new Date();
   properties[39] = {
     ...properties[39],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1317,12 +1298,11 @@ properties[4] = {
         "/pics/40h9.png",
         "/pics/40h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2024, 12, 30).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                  
   // Override the 41st property with Grange view Road details and uploaded images
-  const exactDate = new Date();
   properties[40] = {
     ...properties[40],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1348,12 +1328,11 @@ properties[4] = {
         "/pics/41h9.png",
         "/pics/41h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2025, 2, 28).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                   
   // Override the 42nd property with Grange view Road details and uploaded images
-  const exactDate = new Date();
   properties[41] = {
     ...properties[41],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1379,12 +1358,11 @@ properties[4] = {
         "/pics/42h9.png",
         "/pics/42h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2025, 3, 2).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                   
   // Override the 43rd property with Grange view Road details and uploaded images
-  const exactDate = new Date();
   properties[42] = {
     ...properties[42],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1410,12 +1388,11 @@ properties[4] = {
         "/pics/43h9.png",
         "/pics/43h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2025, 3, 11).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                   
   // Override the 44th property with Grange view Road details and uploaded images
-  const exactDate = new Date();
   properties[43] = {
     ...properties[43],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1441,12 +1418,11 @@ properties[4] = {
         "/pics/44h9.png",
         "/pics/44h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2025, 3, 21).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                   
   // Override the 45th property with Grange view Road details and uploaded images
-  const exactDate = new Date();
   properties[44] = {
     ...properties[44],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1472,12 +1448,11 @@ properties[4] = {
         "/pics/45h9.png",
         "/pics/45h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2025, 1, 28).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                   
   // Override the 46th property with Grange view Road details and uploaded images
-  const exactDate = new Date();
   properties[45] = {
     ...properties[45],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1503,12 +1478,11 @@ properties[4] = {
         "/pics/46h9.png",
         "/pics/46h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2025, 2, 26).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                   
   // Override the 47th property with Grange view Road details and uploaded images
-  const exactDate = new Date();
   properties[46] = {
     ...properties[46],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1534,12 +1508,11 @@ properties[4] = {
         "/pics/47h9.png",
         "/pics/47h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2025, 3, 17).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                   
   // Override the 48th property with Grange view Road details and uploaded images
-  const exactDate = new Date();
   properties[47] = {
     ...properties[47],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1565,12 +1538,11 @@ properties[4] = {
         "/pics/48h9.png",
         "/pics/48h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2025, 1, 27).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                   
   // Override the 49th property with Grange view Road details and uploaded images
-  const exactDate = new Date();
   properties[48] = {
     ...properties[48],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1596,12 +1568,11 @@ properties[4] = {
         "/pics/49h9.png",
         "/pics/49h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2025, 3, 28).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                   
   // Override the 50th property with Grange view Road details and uploaded images
-  const exactDate = new Date();
   properties[49] = {
     ...properties[49],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1627,12 +1598,11 @@ properties[4] = {
         "/pics/50h9.png",
         "/pics/50h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2025, 3, 26).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                   
   // Override the 51st property with Grange view Road details and uploaded images
-  const exactDate = new Date();
   properties[50] = {
     ...properties[50],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1658,12 +1628,11 @@ properties[4] = {
         "/pics/51h9.png",
         "/pics/51h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2025, 1, 12).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                   
   // Override the 52nd property with Grange view Road details and uploaded images
-  const exactDate = new Date();
   properties[51] = {
     ...properties[51],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1689,12 +1658,11 @@ properties[4] = {
         "/pics/52h9.png",
         "/pics/52h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2025, 2, 16).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                   
   // Override the 53rd property with Grange view Road details and uploaded images
-  const exactDate = new Date();
   properties[52] = {
     ...properties[52],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1720,12 +1688,11 @@ properties[4] = {
         "/pics/53h9.png",
         "/pics/53h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2025, 3, 23).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                   
   // Override the 54th property with Grange view Road details and uploaded images
-  const exactDate = new Date();
   properties[53] = {
     ...properties[53],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1751,12 +1718,11 @@ properties[4] = {
         "/pics/54h9.png",
         "/pics/54h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2025, 2, 27).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                   
   // Override the 55th property with Grange view Road details and uploaded images
-  const exactDate = new Date();
   properties[54] = {
     ...properties[54],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1782,12 +1748,11 @@ properties[4] = {
         "/pics/55h9.png",
         "/pics/55h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2025, 3, 12).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                   
   // Override the 56th property with Grange view Road details and uploaded images
-  const exactDate = new Date();
   properties[55] = {
     ...properties[55],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1813,12 +1778,11 @@ properties[4] = {
         "/pics/56h9.png",
         "/pics/56h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2025, 2, 13).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                   
   // Override the 57th property with Grange view Road details and uploaded images
-  const exactDate = new Date();
   properties[56] = {
     ...properties[56],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1844,12 +1808,11 @@ properties[4] = {
         "/pics/57h9.png",
         "/pics/57h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2025, 3, 19).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                   
   // Override the 58th property with Grange view Road details and uploaded images
-  const exactDate = new Date();
   properties[57] = {
     ...properties[57],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1875,12 +1838,11 @@ properties[4] = {
         "/pics/58h9.png",
         "/pics/58h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2025, 1, 25).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                   
   // Override the 59th property with Grange view Road details and uploaded images
-  const exactDate = new Date();
   properties[58] = {
     ...properties[58],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1906,12 +1868,11 @@ properties[4] = {
         "/pics/59h9.png",
         "/pics/59h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2024, 12, 26).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                   
   // Override the 60th property with Grange view Road details and uploaded images
-  const exactDate = new Date();
   properties[59] = {
     ...properties[59],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1937,12 +1898,11 @@ properties[4] = {
         "/pics/60h9.png",
         "/pics/60h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2024, 12, 25).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                   
   // Override the 61st property with Grange view Road details and uploaded images
-  const exactDate = new Date();
   properties[60] = {
     ...properties[60],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1968,12 +1928,11 @@ properties[4] = {
         "/pics/61h9.png",
         "/pics/61h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2025, 3, 9).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                   
   // Override the 62nd property with Grange view Road details and uploaded images
-  const exactDate = new Date();
   properties[61] = {
     ...properties[61],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1999,12 +1958,11 @@ properties[4] = {
         "/pics/62h9.png",
         "/pics/62h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2025, 3, 27).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                   
   // Override the 63rd property with Grange view Road details and uploaded images
-  const exactDate = new Date();
   properties[62] = {
     ...properties[62],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -2030,12 +1988,11 @@ properties[4] = {
         "/pics/63h9.png",
         "/pics/63h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2025, 3, 3).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                   
   // Override the 64th property with Grange view Road details and uploaded images
-  const exactDate = new Date();
   properties[63] = {
     ...properties[63],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -2061,12 +2018,11 @@ properties[4] = {
         "/pics/64h9.png",
         "/pics/64h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2025, 3, 11).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                   
   // Override the 65th property with Grange view Road details and uploaded images
-  const exactDate = new Date();
   properties[64] = {
     ...properties[64],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -2092,12 +2048,11 @@ properties[4] = {
         "/pics/65h9.png",
         "/pics/65h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2025, 1, 27).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                   
   // Override the 66th property with Grange view Road details and uploaded images
-  const exactDate = new Date();
   properties[65] = {
     ...properties[65],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -2123,12 +2078,11 @@ properties[4] = {
         "/pics/66h9.png",
         "/pics/66h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2025, 3, 20).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                   
   // Override the 67th property with Grange view Road details and uploaded images
-  const exactDate = new Date();
   properties[66] = {
     ...properties[66],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -2154,12 +2108,11 @@ properties[4] = {
         "/pics/67h9.png",
         "/pics/67h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2025, 2, 19).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                   
   // Override the 68th property with Grange view Road details and uploaded images
-  const exactDate = new Date();
   properties[67] = {
     ...properties[67],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -2185,12 +2138,11 @@ properties[4] = {
         "/pics/68h9.png",
         "/pics/68h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2025, 3, 16).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                   
   // Override the 69th property with Grange view Road details and uploaded images
-  const exactDate = new Date(2023, 11, 15);
   properties[68] = {
     ...properties[68],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -2216,12 +2168,11 @@ properties[4] = {
         "/pics/69h9.png",
         "/pics/69h10.png",
     ],
-    availableFrom: exactDate.toISOString(),
+    availableFrom: new Date(2024, 12, 15).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                   
   // Override the 70th property with Grange view Road details and uploaded images
-  const exactDate = new Date(2025, 11, 25, 15, 30, 0, 0);
   properties[69] = {
     ...properties[69],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -2247,7 +2198,7 @@ properties[4] = {
         "/pics/70h9.png",
         "/pics/70h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2025, 1, 15).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
  
