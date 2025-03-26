@@ -97,7 +97,6 @@ const generateProperties = (): Property[] => {
   }
 
   // Override the first property with Kavanagh Hall details and uploaded images
-  const currentDate = new Date();
   properties[0] = {
     ...properties[0],
     title: "2 Bedroom Apartment in Kavanagh Hall",
@@ -123,12 +122,11 @@ const generateProperties = (): Property[] => {
       "/lovable-uploads/53efe8de-fd5f-429f-9044-5b6af9795ffc.png",
       "/lovable-uploads/1b6d7d13-dbd7-4d1a-a835-a1f2ad6fd87d.png"
     ],
-    availableFrom: currentDate.toISOString(), // Set to today's date to make it available now
+    availableFrom: new Date("2025-1-31").toISOString(), 
     description: "Beautiful 2 bedroom apartment located in Kavanagh Hall, Collegewood, Castleknock, Dublin 15. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
 
   // Override the second property with Kilworth Road details and uploaded images
-const currentDate = new Date();
 properties[1] = {
   ...properties[1],
   title: "3 Bedroom Apartment in Kilworth Road",
@@ -152,12 +150,11 @@ properties[1] = {
     "/pics/2h7.png",
     "/pics/2h8.png",
   ],
-  availableFrom: currentDate.toISOString(), // Set to today's date to make it available now
+  availableFrom: new Date("2025-1-2").toISOString(), 
   description: "Beautiful 3 bedroom apartment located in Kilworth Road, Drimnagh,  Dublin 12. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
 };
 
   // Override the third property with Newhaggard details and uploaded images
-const currentDate = new Date();
 properties[2] = {
   ...properties[2],
   title: "2 Bedroom Apartment in Newhaggard",
@@ -182,12 +179,11 @@ properties[2] = {
     "/pics/3h8.png",
     "/pics/3h9.png",
   ],
-  availableFrom: currentDate.toISOString(), // Set to today's date to make it available now
+  availableFrom: new Date(2024, 12, 29).toISOString(), 
   description: "Beautiful 2 bedroom apartment located in Newhaggard, Lusk,  Co.Dublin. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
 };
 
   // Override the fourth property with Mayeston Court details and uploaded images
-  const currentDate = new Date();
   properties[3] = {
     ...properties[3],
     title: "2 Bedroom Apartment in Mayeston Court",
@@ -213,12 +209,11 @@ properties[2] = {
       "/pics/4h9.png",
       "/pics/4h10.png",
     ],
-    availableFrom: currentDate.toISOString(), // Set to today's date to make it available now
+    availableFrom: new Date(2025, 3, 25).toISOString(), 
     description: "Beautiful 2 bedroom apartment located in Mayeston Court, Mayeston hall, Dublin 11. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
   
   // Override the fifth property with Cherrywood Lawns details and uploaded images
-const currentDate = new Date();
 properties[4] = {
   ...properties[4],
   title: "3 Bedroom Apartment in Kilworth Road",
@@ -245,12 +240,11 @@ properties[4] = {
     "/pics/5h10.png",
     "/pics/5h11.png",
   ],
-  availableFrom: currentDate.toISOString(), // Set to today's date to make it available now
+  availableFrom: new Date(2025, 2, 15).toISOString(), 
   description: "Beautiful 3 bedroom apartment located in Cherrywood Lawns, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
 };
 
   // Override the sixth property with Grange view Road details and uploaded images
-  const currentDate = new Date();
   properties[5] = {
     ...properties[5],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -276,12 +270,11 @@ properties[4] = {
       "/pics/6h9.png",
       "/pics/6h10.png",
     ],
-    availableFrom: currentDate.toISOString(), // Set to today's date to make it available now
+    availableFrom: new Date(2025, 1, 27).toISOString(), 
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
   
   // Override the seventh property with Grange view Road details and uploaded images
-  const currentDate = new Date();
   properties[6] = {
     ...properties[6],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -309,12 +302,11 @@ properties[4] = {
       "/pics/8h11.png",
       "/pics/8h12.png",
     ],
-    availableFrom: currentDate.toISOString(), // Set to today's date to make it available now
+    availableFrom: new Date(2025, 2, 21).toISOString(), 
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
    
   // Override the eighth property with Grange view Road details and uploaded images
-  const currentDate = new Date();
   properties[7] = {
     ...properties[7],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -342,12 +334,11 @@ properties[4] = {
       "/pics/7h11.png",
       "/pics/7h12.png",
     ],
-    availableFrom: currentDate.toISOString(), // Set to today's date to make it available now
+    availableFrom: new Date(2025, 3, 12).toISOString(), 
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
    
   // Override the ninth property with Grange view Road details and uploaded images
-  const currentDate = new Date();
   properties[8] = {
     ...properties[8],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -375,12 +366,11 @@ properties[4] = {
       "/pics/9h11.png",
       "/pics/9h12.png",
     ],
-    availableFrom: currentDate.toISOString(), // Set to today's date to make it available now
+    availableFrom: new Date(2025, 4, 1).toISOString(), 
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
    
   // Override the tenth property with Grange view Road details and uploaded images
-  const currentDate = new Date();
   properties[9] = {
     ...properties[9],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -408,12 +398,11 @@ properties[4] = {
       "/pics/10h11.png",
       "/pics/10h12.png",
     ],
-    availableFrom: currentDate.toISOString(), // Set to today's date to make it available now
+    availableFrom: new Date(2025, 5, 3).toISOString(), 
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
    
   // Override the eleventh property with Grange view Road details and uploaded images
-  const currentDate = new Date();
   properties[10] = {
     ...properties[10],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -441,12 +430,11 @@ properties[4] = {
       "/pics/11h11.png",
       "/pics/11h12.png",
     ],
-    availableFrom: currentDate.toISOString(), // Set to today's date to make it available now
+    availableFrom: new Date(2024, 12, 15).toDateString(), 
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
      
   // Override the twelveth property with Grange view Road details and uploaded images
-  const currentDate = new Date();
   properties[11] = {
     ...properties[11],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -472,12 +460,11 @@ properties[4] = {
         "/pics/12h9.png",
         "/pics/12h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2025, 3, 11).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
        
   // Override the thirteenth property with Grange view Road details and uploaded images
-  const currentDate = new Date();
   properties[12] = {
     ...properties[12],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -503,12 +490,12 @@ properties[4] = {
         "/pics/13h9.png",
         "/pics/13h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2025, 3, 30).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
          
   // Override the fourteenth property with Grange view Road details and uploaded images
-  const currentDate = new Date();
+  const exactDate = new Date(2025, 5, 2);
   properties[13] = {
     ...properties[13],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -534,12 +521,11 @@ properties[4] = {
         "/pics/14h9.png",
         "/pics/14h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2025, 5, 2).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
            
   // Override the fifteenth property with Grange view Road details and uploaded images
-  const currentDate = new Date();
   properties[14] = {
     ...properties[14],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -565,12 +551,11 @@ properties[4] = {
         "/pics/15h9.png",
         "/pics/15h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2025, 1, 26).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
            
   // Override the sixteenth property with Grange view Road details and uploaded images
-  const currentDate = new Date();
   properties[15] = {
     ...properties[15],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -596,12 +581,11 @@ properties[4] = {
         "/pics/16h9.png",
         "/pics/16h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2025, 1, 16).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
            
   // Override the seventeenthth property with Grange view Road details and uploaded images
-  const currentDate = new Date();
   properties[16] = {
     ...properties[16],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -627,12 +611,11 @@ properties[4] = {
         "/pics/17h9.png",
         "/pics/17h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2025, 2, 2).toISOString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
            
   // Override the eighteenth property with Grange view Road details and uploaded images
-  const currentDate = new Date();
   properties[17] = {
     ...properties[17],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -658,12 +641,11 @@ properties[4] = {
         "/pics/18h9.png",
         "/pics/18h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2025, 2, 21).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
            
   // Override the ninteenth property with Grange view Road details and uploaded images
-  const currentDate = new Date();
   properties[18] = {
     ...properties[18],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -689,12 +671,11 @@ properties[4] = {
         "/pics/19h9.png",
         "/pics/19h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2025, 3, 13).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
            
   // Override the twentieth property with Grange view Road details and uploaded images
-  const currentDate = new Date();
   properties[19] = {
     ...properties[19],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -720,12 +701,12 @@ properties[4] = {
         "/pics/20h9.png",
         "/pics/20h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date(2025, 3, 19).toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
              
   // Override the twenty-first property with Grange view Road details and uploaded images
-  const currentDate = new Date();
+  const exactDate = new Date(2025, 1, 25);
   properties[20] = {
     ...properties[20],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -751,12 +732,12 @@ properties[4] = {
         "/pics/21h9.png",
         "/pics/21h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: exactDate.toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                
   // Override the twenty-second property with Grange view Road details and uploaded images
-  const currentDate = new Date();
+  const exactDate = new Date(2025, 2, 18);
   properties[21] = {
     ...properties[21],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -782,12 +763,12 @@ properties[4] = {
         "/pics/22h9.png",
         "/pics/22h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: exactDate.toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                
   // Override the twenty-third property with Grange view Road details and uploaded images
-  const currentDate = new Date();
+  const exactDate = new Date(2024, 12, 23);
   properties[22] = {
     ...properties[22],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -813,12 +794,12 @@ properties[4] = {
         "/pics/23h9.png",
         "/pics/23h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: exactDate.toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                
   // Override the twenty-fourth property with Grange view Road details and uploaded images
-  const currentDate = new Date();
+  const exactDate = new Date(2024, 12, 18);
   properties[23] = {
     ...properties[23],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -844,12 +825,12 @@ properties[4] = {
         "/pics/24h9.png",
         "/pics/24h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: exactDate.toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                
   // Override the twenty-fifth property with Grange view Road details and uploaded images
-  const currentDate = new Date();
+  const exactDate = new Date(2025, 3, 9);
   properties[24] = {
     ...properties[24],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -875,12 +856,12 @@ properties[4] = {
         "/pics/25h9.png",
         "/pics/25h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: exactDate.toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                
   // Override the twenty-sixth property with Grange view Road details and uploaded images
-  const currentDate = new Date();
+  const exactDate = new Date(2025, 4, 2);
   properties[25] = {
     ...properties[25],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -906,7 +887,7 @@ properties[4] = {
         "/pics/26h9.png",
         "/pics/26h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: exactDate.toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
  
@@ -934,12 +915,11 @@ properties[4] = {
       "/lovable-uploads/9a39ba61-85e5-42cf-b690-3cef6487fdd0.png",
       "/lovable-uploads/3daf9873-08e3-4eb1-920c-d71cdd4863d7.png"
     ],
-    availableFrom: currentDate.toISOString(), // Set to today's date to make it available now
+    availableFrom: new Date("2025-3-12").toDateString(), 
     description: "Beautiful 3 bedroom house located in Lindisfarne Green, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a well-maintained garden. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                
   // Override the 28th property with Grange view Road details and uploaded images
-  const currentDate = new Date();
   properties[27] = {
     ...properties[27],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -965,12 +945,12 @@ properties[4] = {
         "/pics/28h9.png",
         "/pics/28h10.png",
     ],
-    availableFrom: "2023-11-15T12:00:00.000Z",
+    availableFrom: new Date("2025-1-15").toDateString(),
     description: "Beautiful 3 bedroom apartment located in Grange view Road, Clondalkin, Dublin 22. This property offers spacious accommodation throughout and is presented in excellent condition. Features include a modern kitchen, comfortable living areas, and a balcony. Close to local amenities including shops, schools, and public transport. Available for immediate viewing."
   };
                 
   // Override the 29th property with Grange view Road details and uploaded images
-  const currentDate = new Date();
+  const exactDate = new Date();
   properties[28] = {
     ...properties[28],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1001,7 +981,7 @@ properties[4] = {
   };
                 
   // Override the 30th property with Grange view Road details and uploaded images
-  const currentDate = new Date();
+  const exactDate = new Date();
   properties[29] = {
     ...properties[29],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1032,7 +1012,7 @@ properties[4] = {
   };
                 
   // Override the 31st property with Grange view Road details and uploaded images
-  const currentDate = new Date();
+  const exactDate = new Date();
   properties[30] = {
     ...properties[30],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1063,7 +1043,7 @@ properties[4] = {
   };
                 
   // Override the 32nd property with Grange view Road details and uploaded images
-  const currentDate = new Date();
+  const exactDate = new Date();
   properties[31] = {
     ...properties[31],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1094,7 +1074,7 @@ properties[4] = {
   };
                 
   // Override the 33rd property with Grange view Road details and uploaded images
-  const currentDate = new Date();
+  const exactDate = new Date();
   properties[32] = {
     ...properties[32],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1125,7 +1105,7 @@ properties[4] = {
   };
                 
   // Override the 34th property with Grange view Road details and uploaded images
-  const currentDate = new Date();
+  const exactDate = new Date();
   properties[33] = {
     ...properties[33],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1156,7 +1136,7 @@ properties[4] = {
   };
                  
   // Override the 35th property with Grange view Road details and uploaded images
-  const currentDate = new Date();
+  const exactDate = new Date();
   properties[34] = {
     ...properties[34],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1187,7 +1167,7 @@ properties[4] = {
   };
                 
   // Override the 36th property with Grange view Road details and uploaded images
-  const currentDate = new Date();
+  const exactDate = new Date();
   properties[35] = {
     ...properties[35],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1218,7 +1198,7 @@ properties[4] = {
   };
                   
   // Override the 37th property with Grange view Road details and uploaded images
-  const currentDate = new Date();
+  const exactDate = new Date();
   properties[36] = {
     ...properties[36],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1249,7 +1229,7 @@ properties[4] = {
   };
                  
   // Override the 38th property with Grange view Road details and uploaded images
-  const currentDate = new Date();
+  const exactDate = new Date();
   properties[37] = {
     ...properties[37],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1280,7 +1260,7 @@ properties[4] = {
   };
                  
   // Override the 39th property with Grange view Road details and uploaded images
-  const currentDate = new Date();
+  const exactDate = new Date();
   properties[38] = {
     ...properties[38],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1311,7 +1291,7 @@ properties[4] = {
   };
                  
   // Override the 40th property with Grange view Road details and uploaded images
-  const currentDate = new Date();
+  const exactDate = new Date();
   properties[39] = {
     ...properties[39],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1342,7 +1322,7 @@ properties[4] = {
   };
                  
   // Override the 41st property with Grange view Road details and uploaded images
-  const currentDate = new Date();
+  const exactDate = new Date();
   properties[40] = {
     ...properties[40],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1373,7 +1353,7 @@ properties[4] = {
   };
                   
   // Override the 42nd property with Grange view Road details and uploaded images
-  const currentDate = new Date();
+  const exactDate = new Date();
   properties[41] = {
     ...properties[41],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1404,7 +1384,7 @@ properties[4] = {
   };
                   
   // Override the 43rd property with Grange view Road details and uploaded images
-  const currentDate = new Date();
+  const exactDate = new Date();
   properties[42] = {
     ...properties[42],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1435,7 +1415,7 @@ properties[4] = {
   };
                   
   // Override the 44th property with Grange view Road details and uploaded images
-  const currentDate = new Date();
+  const exactDate = new Date();
   properties[43] = {
     ...properties[43],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1466,7 +1446,7 @@ properties[4] = {
   };
                   
   // Override the 45th property with Grange view Road details and uploaded images
-  const currentDate = new Date();
+  const exactDate = new Date();
   properties[44] = {
     ...properties[44],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1497,7 +1477,7 @@ properties[4] = {
   };
                   
   // Override the 46th property with Grange view Road details and uploaded images
-  const currentDate = new Date();
+  const exactDate = new Date();
   properties[45] = {
     ...properties[45],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1528,7 +1508,7 @@ properties[4] = {
   };
                   
   // Override the 47th property with Grange view Road details and uploaded images
-  const currentDate = new Date();
+  const exactDate = new Date();
   properties[46] = {
     ...properties[46],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1559,7 +1539,7 @@ properties[4] = {
   };
                   
   // Override the 48th property with Grange view Road details and uploaded images
-  const currentDate = new Date();
+  const exactDate = new Date();
   properties[47] = {
     ...properties[47],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1590,7 +1570,7 @@ properties[4] = {
   };
                   
   // Override the 49th property with Grange view Road details and uploaded images
-  const currentDate = new Date();
+  const exactDate = new Date();
   properties[48] = {
     ...properties[48],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1621,7 +1601,7 @@ properties[4] = {
   };
                   
   // Override the 50th property with Grange view Road details and uploaded images
-  const currentDate = new Date();
+  const exactDate = new Date();
   properties[49] = {
     ...properties[49],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1652,7 +1632,7 @@ properties[4] = {
   };
                   
   // Override the 51st property with Grange view Road details and uploaded images
-  const currentDate = new Date();
+  const exactDate = new Date();
   properties[50] = {
     ...properties[50],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1683,7 +1663,7 @@ properties[4] = {
   };
                   
   // Override the 52nd property with Grange view Road details and uploaded images
-  const currentDate = new Date();
+  const exactDate = new Date();
   properties[51] = {
     ...properties[51],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1714,7 +1694,7 @@ properties[4] = {
   };
                   
   // Override the 53rd property with Grange view Road details and uploaded images
-  const currentDate = new Date();
+  const exactDate = new Date();
   properties[52] = {
     ...properties[52],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1745,7 +1725,7 @@ properties[4] = {
   };
                   
   // Override the 54th property with Grange view Road details and uploaded images
-  const currentDate = new Date();
+  const exactDate = new Date();
   properties[53] = {
     ...properties[53],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1776,7 +1756,7 @@ properties[4] = {
   };
                   
   // Override the 55th property with Grange view Road details and uploaded images
-  const currentDate = new Date();
+  const exactDate = new Date();
   properties[54] = {
     ...properties[54],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1807,7 +1787,7 @@ properties[4] = {
   };
                   
   // Override the 56th property with Grange view Road details and uploaded images
-  const currentDate = new Date();
+  const exactDate = new Date();
   properties[55] = {
     ...properties[55],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1838,7 +1818,7 @@ properties[4] = {
   };
                   
   // Override the 57th property with Grange view Road details and uploaded images
-  const currentDate = new Date();
+  const exactDate = new Date();
   properties[56] = {
     ...properties[56],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1869,7 +1849,7 @@ properties[4] = {
   };
                   
   // Override the 58th property with Grange view Road details and uploaded images
-  const currentDate = new Date();
+  const exactDate = new Date();
   properties[57] = {
     ...properties[57],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1900,7 +1880,7 @@ properties[4] = {
   };
                   
   // Override the 59th property with Grange view Road details and uploaded images
-  const currentDate = new Date();
+  const exactDate = new Date();
   properties[58] = {
     ...properties[58],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1931,7 +1911,7 @@ properties[4] = {
   };
                   
   // Override the 60th property with Grange view Road details and uploaded images
-  const currentDate = new Date();
+  const exactDate = new Date();
   properties[59] = {
     ...properties[59],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1962,7 +1942,7 @@ properties[4] = {
   };
                   
   // Override the 61st property with Grange view Road details and uploaded images
-  const currentDate = new Date();
+  const exactDate = new Date();
   properties[60] = {
     ...properties[60],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -1993,7 +1973,7 @@ properties[4] = {
   };
                   
   // Override the 62nd property with Grange view Road details and uploaded images
-  const currentDate = new Date();
+  const exactDate = new Date();
   properties[61] = {
     ...properties[61],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -2024,7 +2004,7 @@ properties[4] = {
   };
                   
   // Override the 63rd property with Grange view Road details and uploaded images
-  const currentDate = new Date();
+  const exactDate = new Date();
   properties[62] = {
     ...properties[62],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -2055,7 +2035,7 @@ properties[4] = {
   };
                   
   // Override the 64th property with Grange view Road details and uploaded images
-  const currentDate = new Date();
+  const exactDate = new Date();
   properties[63] = {
     ...properties[63],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -2086,7 +2066,7 @@ properties[4] = {
   };
                   
   // Override the 65th property with Grange view Road details and uploaded images
-  const currentDate = new Date();
+  const exactDate = new Date();
   properties[64] = {
     ...properties[64],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -2117,7 +2097,7 @@ properties[4] = {
   };
                   
   // Override the 66th property with Grange view Road details and uploaded images
-  const currentDate = new Date();
+  const exactDate = new Date();
   properties[65] = {
     ...properties[65],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -2148,7 +2128,7 @@ properties[4] = {
   };
                   
   // Override the 67th property with Grange view Road details and uploaded images
-  const currentDate = new Date();
+  const exactDate = new Date();
   properties[66] = {
     ...properties[66],
     title: "3 Bedroom Apartment in Grange view Road",
@@ -2179,7 +2159,7 @@ properties[4] = {
   };
                   
   // Override the 68th property with Grange view Road details and uploaded images
-  const currentDate = new Date();
+  const exactDate = new Date();
   properties[67] = {
     ...properties[67],
     title: "3 Bedroom Apartment in Grange view Road",
