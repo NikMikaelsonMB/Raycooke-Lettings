@@ -1,161 +1,84 @@
 
-import React, { useState } from "react";
-import { Property } from "@/types/property";
-import { Bed, Bath, Square, CalendarDays, ArrowUpRight, MapPin, ChevronLeft, ChevronRight } from "lucide-react";
-import { formatDistanceToNow } from "date-fns";
+import React from "react";
+import { Link } from "react-router-dom";
+import { Card, CardContent, CardFooter } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Property, PropertyStatus } from "@/types/property";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { formatCurrency } from "@/utils/propertyUtils";
 
 interface PropertyCardProps {
   property: Property;
 }
 
-const PropertyCard = ({ property }: PropertyCardProps) => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
+  const mainImage = property.images[0] || "/placeholder.svg";
 
-  const formatPrice = (price: number) => {
-    return new Intl.NumberFormat("en-IE", {
-      style: "currency",
-      currency: "EUR",
-      maximumFractionDigits: 0,
-    }).format(price);
-  };
-
-  const formatDate = (dateString: string) => {
-    const date = new Date(dateString);
-    return formatDistanceToNow(date, { addSuffix: true });
-  };
-
-  // BER color mapping
-  const getBerColor = (rating: string) => {
-    if (rating.startsWith("A")) return "bg-green-500";
-    if (rating.startsWith("B")) return "bg-emerald-500";
-    if (rating.startsWith("C")) return "bg-teal-500";
-    if (rating.startsWith("D")) return "bg-yellow-500";
-    if (rating.startsWith("E")) return "bg-orange-500";
-    if (rating.startsWith("F")) return "bg-red-500";
-    if (rating === "G") return "bg-red-600";
-    return "bg-gray-500"; // Exempt
-  };
-
-  const nextImage = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    if (property.images.length > 1) {
-      setCurrentImageIndex((prevIndex) => 
-        prevIndex === property.images.length - 1 ? 0 : prevIndex + 1
-      );
+  const getStatusBadge = (status: PropertyStatus) => {
+    switch (status) {
+      case "available":
+        return <Badge className="absolute top-2 right-2 bg-green-500">Available</Badge>;
+      case "reserved":
+        return <Badge className="absolute top-2 right-2 bg-amber-500">Reserved</Badge>;
+      case "rented":
+        return <Badge className="absolute top-2 right-2 bg-blue-500">Rented</Badge>;
+      case "unavailable":
+        return <Badge className="absolute top-2 right-2 bg-red-500">Unavailable</Badge>;
+      default:
+        return null;
     }
   };
-
-  const prevImage = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    if (property.images.length > 1) {
-      setCurrentImageIndex((prevIndex) => 
-        prevIndex === 0 ? property.images.length - 1 : prevIndex - 1
-      );
-    }
-  };
-
-  const currentImage = property.images[currentImageIndex] || "https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&q=80";
 
   return (
-    <div className="property-card group">
-      {/* Image container */}
-      <div className="relative h-48 md:h-60 overflow-hidden">
-        <img
-          src={currentImage}
-          alt={property.title}
-          className="property-image transition-transform duration-300 hover:scale-105"
-        />
-
-        {/* Image navigation arrows */}
-        {property.images.length > 1 && (
-          <>
-            <button 
-              onClick={prevImage}
-              className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white rounded-full p-1 transition-all duration-200 opacity-0 group-hover:opacity-100"
-              aria-label="Previous image"
-            >
-              <ChevronLeft size={20} />
-            </button>
-            <button 
-              onClick={nextImage}
-              className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white rounded-full p-1 transition-all duration-200 opacity-0 group-hover:opacity-100"
-              aria-label="Next image"
-            >
-              <ChevronRight size={20} />
-            </button>
-            
-            {/* Image counter */}
-            <div className="absolute bottom-3 right-3 bg-black/60 text-white text-xs px-2 py-1 rounded-full">
-              {currentImageIndex + 1}/{property.images.length}
-            </div>
-          </>
-        )}
-
-        {/* Badges */}
-        <div className="absolute top-3 left-3 flex flex-wrap gap-2">
-          {property.isNew && (
-            <span className="property-badge bg-estate-primary text-white">
-              New
-            </span>
-          )}
+    <Link to={`/property/${property.id}`}>
+      <Card className="h-full overflow-hidden hover:shadow-md transition-shadow">
+        <div className="relative">
+          <AspectRatio ratio={16 / 9}>
+            <img
+              src={mainImage}
+              alt={property.title}
+              className="w-full h-full object-cover"
+            />
+          </AspectRatio>
+          {getStatusBadge(property.status)}
           {property.isFeatured && (
-            <span className="property-badge bg-amber-500 text-white">
-              Featured
-            </span>
+            <Badge className="absolute top-2 left-2 bg-primary">Featured</Badge>
           )}
-          <span className={`property-badge text-white ${getBerColor(property.bER)}`}>
-            BER {property.bER}
-          </span>
+          {property.isNew && (
+            <Badge
+              className="absolute bottom-2 left-2 bg-black text-white"
+              variant="outline"
+            >
+              New
+            </Badge>
+          )}
         </div>
-
-        {/* Price badge */}
-        <div className="absolute bottom-3 left-3">
-          <div className="bg-white rounded-lg shadow-md px-3 py-1.5 font-semibold text-estate-primary">
-            {formatPrice(property.price)}<span className="text-sm font-normal">/month</span>
+        <CardContent className="pt-4">
+          <h3 className="text-lg font-semibold line-clamp-1">{property.title}</h3>
+          <p className="text-sm text-muted-foreground line-clamp-1 mt-1">
+            {property.address.street}, {property.address.area}
+          </p>
+          <div className="mt-3 font-bold text-xl">{formatCurrency(property.price)}</div>
+          <div className="flex items-center mt-3 text-sm text-muted-foreground">
+            <div className="flex items-center mr-4">
+              <span className="font-medium mr-1">{property.bedrooms}</span> beds
+            </div>
+            <div className="flex items-center mr-4">
+              <span className="font-medium mr-1">{property.bathrooms}</span> baths
+            </div>
+            <div className="flex items-center">
+              <span className="font-medium mr-1">{property.propertySize}</span> m²
+            </div>
           </div>
-        </div>
-
-        {/* Quick view button */}
-        <div className="absolute top-0 right-0 p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <button className="bg-white/90 hover:bg-white rounded-full p-2 text-estate-primary shadow-md transition-all duration-200">
-            <ArrowUpRight size={18} />
-          </button>
-        </div>
-      </div>
-
-      {/* Content */}
-      <div className="p-4">
-        <h3 className="font-medium text-lg text-estate-dark line-clamp-1 mb-1">
-          {property.title}
-        </h3>
-        <p className="text-estate-medium text-sm mb-3 flex items-center">
-          <MapPin size={14} className="inline mr-1 text-estate-primary" />
-          {property.address.area}, {property.address.county}
-        </p>
-
-        {/* Features */}
-        <div className="flex items-center justify-between text-sm text-estate-medium mb-3">
-          <div className="flex items-center">
-            <Bed size={16} className="mr-1" />
-            <span>{property.bedrooms} {property.bedrooms === 1 ? 'Bed' : 'Beds'}</span>
+        </CardContent>
+        <CardFooter className="pt-0">
+          <div className="flex justify-between items-center w-full text-sm text-muted-foreground">
+            <div className="capitalize">{property.type}</div>
+            <Badge variant="outline">{property.bER}</Badge>
           </div>
-          <div className="flex items-center">
-            <Bath size={16} className="mr-1" />
-            <span>{property.bathrooms} {property.bathrooms === 1 ? 'Bath' : 'Baths'}</span>
-          </div>
-          <div className="flex items-center">
-            <Square size={16} className="mr-1" />
-            <span>{property.propertySize} m²</span>
-          </div>
-        </div>
-
-        {/* Available from */}
-        <div className="flex items-center text-sm text-estate-medium mt-3 pt-3 border-t border-gray-100">
-          <CalendarDays size={16} className="mr-2 text-estate-primary" />
-          <span>Available {formatDate(property.availableFrom)}</span>
-        </div>
-      </div>
-    </div>
+        </CardFooter>
+      </Card>
+    </Link>
   );
 };
 
