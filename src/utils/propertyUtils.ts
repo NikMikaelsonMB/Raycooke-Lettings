@@ -1,15 +1,6 @@
 
 import { BERRating } from "@/types/property";
 
-// Format currency for displaying prices
-export const formatCurrency = (amount: number): string => {
-  return new Intl.NumberFormat('en-IE', {
-    style: 'currency',
-    currency: 'EUR',
-    maximumFractionDigits: 0
-  }).format(amount);
-};
-
 // Generate random image indices for properties
 export const getRandomImageIndex = (): number => {
   return Math.floor(Math.random() * 20) + 1; // Assuming 20 property images are available
